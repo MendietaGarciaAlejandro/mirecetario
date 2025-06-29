@@ -24,5 +24,6 @@
     "settings": "Ajustes",
     "language": "Idioma",
     "theme": "Tema",
-    "about": "Acerca de"
+    "about": "Acerca de",
+    "description": "Descripción"
 }

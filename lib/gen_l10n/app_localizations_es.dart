@@ -82,4 +82,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get about => 'Acerca de';
+
+  @override
+  String get description => 'Descripción';
 }

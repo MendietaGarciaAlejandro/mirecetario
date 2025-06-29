@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:mirecetario/features/recipes/presentation/recipes_screen.dart';
+import 'package:mirecetario/features/meal_planner/presentation/meal_planner_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -68,9 +70,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget _buildBody() {
     switch (_selectedIndex) {
       case 0:
-        return const Center(child: Text('Pantalla de Recetas'));
+        return const RecipesScreen();
       case 1:
-        return const Center(child: Text('Planificador de Menú'));
+        return const MealPlannerScreen();
       case 2:
         return const Center(child: Text('Lista de Compras'));
       default:
