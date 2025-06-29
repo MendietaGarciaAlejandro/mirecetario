@@ -50,7 +50,7 @@ class RecipesScreen extends ConsumerWidget {
 
 class _RecipeList extends ConsumerWidget {
   final List<Recipe> recipes;
-  const _RecipeList({required this.recipes, super.key});
+  const _RecipeList({required this.recipes});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

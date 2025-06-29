@@ -1,16 +1,55 @@
-# mirecetario
+# Mirecetario
 
-A new Flutter project.
+Mirecetario es una aplicación Flutter para gestionar recetas, planificar menús semanales y generar automáticamente la lista de la compra.
 
-## Getting Started
+## Características
 
-This project is a starting point for a Flutter application.
+- Gestión de recetas con ingredientes y cantidades.
+- Planificación semanal de menús.
+- Generación automática de la lista de la compra agrupando ingredientes.
+- Sincronización de datos entre plataformas.
+- Compatible con Android, escritorio (Windows, Linux, macOS) y Web.
 
-A few resources to get you started if this is your first Flutter project:
+## Instalación y ejecución
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Android y Escritorio
+1. Clona este repositorio.
+2. Instala las dependencias:
+   ```sh
+   flutter pub get
+   ```
+3. Ejecuta la app:
+   ```sh
+   flutter run -d <dispositivo>
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Web
+1. Instala las dependencias:
+   ```sh
+   flutter pub get
+   ```
+2. Ejecuta la app en modo web:
+   ```sh
+   flutter run -d chrome
+   ```
+
+## Notas sobre compatibilidad
+- Para la gestión de base de datos, la app utiliza `drift` y selecciona el backend adecuado según la plataforma:
+  - **Web:** usa IndexedDB.
+  - **Android y Escritorio:** usa SQLite.
+- No es necesario cambiar el código para cada plataforma, la app detecta el entorno automáticamente.
+
+## Estructura del proyecto
+- `lib/` Código principal de la aplicación.
+- `features/` Funcionalidades principales (recetas, lista de la compra, planificador).
+- `core/database/` Lógica de base de datos y adaptadores multiplataforma.
+- `test/` Pruebas unitarias y de widgets.
+
+## Dependencias principales
+- [Flutter](https://flutter.dev/)
+- [Drift](https://drift.simonbinder.eu/)
+- [Riverpod](https://riverpod.dev/)
+
+## Licencia
+
+MIT

@@ -3,7 +3,6 @@ import 'package:drift/drift.dart' show Value;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mirecetario/core/database/database.dart';
 import 'package:mirecetario/features/recipes/presentation/recipes_screen.dart';
-import 'package:mirecetario/features/meal_planner/application/meal_planner_provider.dart';
 
 final generateShoppingListProvider = FutureProvider<void>((ref) async {
   final db = ref.watch(appDatabaseProvider);

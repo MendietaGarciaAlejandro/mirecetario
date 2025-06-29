@@ -58,7 +58,7 @@ class ShoppingListScreen extends ConsumerWidget {
 
 class _ShoppingListBody extends ConsumerWidget {
   final List<ShoppingListData> items;
-  const _ShoppingListBody({required this.items, super.key});
+  const _ShoppingListBody({required this.items});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -94,7 +94,7 @@ class _ShoppingListBody extends ConsumerWidget {
 }
 
 class _AddShoppingItemDialog extends ConsumerStatefulWidget {
-  const _AddShoppingItemDialog({super.key});
+  const _AddShoppingItemDialog();
 
   @override
   ConsumerState<_AddShoppingItemDialog> createState() => _AddShoppingItemDialogState();
